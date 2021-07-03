@@ -1,0 +1,17 @@
+.body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+
+}
+
+body{
+    background:rgb(60, 77, 152);
+    text-align: center;
+}
+.title {
+    color: white;
+    font-family: 'Bona Nova', serif;
+    font-size: 36px;
+}
