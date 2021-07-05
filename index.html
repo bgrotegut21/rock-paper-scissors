@@ -9,33 +9,45 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
         </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        </style>
 </head>
 <body>
     <main>
         <h1 class = "title">Rock Paper Scissors</h1>
         <div id = "scores">
-            <h1>Computer Score - 0</h1>
-            <h1>Your Score - 0</h1>
+            <h2>Computer Score - 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+            <h2>Your Score - 0</h2>
         </div>
 
+
         <div id = "results">
-            <h2>Computer chose Paper</h2>
-            <div class = "computer-result">Computer Results</div>
-    
+            <div id = "result-text">
+                <h2 id = "computer-results">Computer chose Paper </h2>
+                <h2 id = "user-results"> You chose Paper</h2>
+
+            </div>
+            <div id = "result-images">
+                <div id = "computer-results-img">Computer Results</div>
+                <div id = "user-results-img">User Results</div>
+
+            </div>
+
+            
     
         </div>
-        <div id = "Rock">
-            <div class = "rock-img">Rock</div>
-            <h2 class = "rock-text">Rock</h2>
+        <div id = "items">
+            <div id = "rock">rocks</div>
+
+
+            <div id = "paper">paper</div>  
+
+            <div id = "scissors">scissors</div>
+
+
         </div>
-        <div id = "Paper">
-            <div class="paper-img">Paper</div>
-            <h2 class = "paper-text">Paper</h2>
-    
-        <div id = "Scissors">
-            <div class= "scisscors-img">Scissors</div>
-            <h2 class = "scisscors-text">Scicssors</h2>
-        </div>
+
     </main>
 
 
