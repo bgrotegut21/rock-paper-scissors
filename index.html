@@ -17,15 +17,13 @@
     <main>
         <h1 class = "title">Rock Paper Scissors</h1>
         <div id = "scores">
-            <h2>Computer Score - 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
-            <h2>Your Score - 0</h2>
+            <h2 id = "comuter-score">Computer Score - 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+            <h2 id = "user-score">Your Score - 0</h2>
         </div>
-
-
         <div id = "results">
             <div id = "result-text">
-                <h2 id = "computer-results">Computer chose Paper </h2>
-                <h2 id = "user-results"> You chose Paper</h2>
+                <h2 id = "computer-results">Computer chose paper </h2>
+                <h2 id = "user-results"> You chose paper</h2>
 
             </div>
             <div id = "result-images">
@@ -33,22 +31,28 @@
                 <div id = "user-results-img">User Results</div>
 
             </div>
-
-            
-    
         </div>
         <div id = "items">
             <div id = "rock">rocks</div>
-
-
             <div id = "paper">paper</div>  
-
             <div id = "scissors">scissors</div>
-
-
         </div>
-
     </main>
+
+    <section id = "win">
+        <div class = "win-page">
+            <h1 class = "win-text">You Win</h1>
+            <button class = "win-button">play again</button>
+        </div>
+    </section>
+
+    <section id = "lost">
+        <h1 class = "lost-text">You Lost</h1>
+        <button class = "lost-button"> start again</button>
+
+    </section>
+
+    <script src = "main.js"></script>
 
 
 </body>

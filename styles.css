@@ -11,11 +11,6 @@ body {
     --scissors-image: url(scissors.svg);
 }
 
-main {
- 
-    height:1000px;
-}
-
 body{
     color:white;
     background:rgb(60, 77, 152);
@@ -37,13 +32,13 @@ body{
 
 #items {
 
-    margin-top: 50px;
+    margin-top: 10px;
     /*background:red;*/
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 400px;
+    height: 100px;
 
 }
 
@@ -60,6 +55,11 @@ body{
     background-repeat: no-repeat;
     background-size: 80px;
     
+}
+
+#items div:hover {
+    opacity: 0.8;
+    cursor:pointer;
 }
 
 #paper {
@@ -84,6 +84,7 @@ body{
     fill: red;
     background-repeat: no-repeat;
     background-size: 80px;
+
     
 }
 
@@ -92,11 +93,13 @@ body{
     margin-right:10px;
     width:25%;
     text-align: -9999px;
-    height: 30%;
+    height: 120%;
     display: flex;
     flex-flow: column;
+    margin-top: -10px;
+
     justify-content: center;
-    align-items: center;
+  
 }
 
 
@@ -134,7 +137,7 @@ body{
 #result-images div {
    
     border-radius: 20px;
-    margin-right: 20px;
+
     width: 44%;
     height:90%; 
     text-indent: -99999px;
@@ -165,12 +168,95 @@ body{
 }
 
 #result-text {
-    background:red;
+
     display: flex;
     justify-content: space-around;
+    flex-wrap:wrap
 }
 
-#result-text h2 {
-    background:orange;
+#win{
+    display: none;
+}
 
+#lost {
+    display: none;
+}
+@media screen and (max-width: 339px ) {
+    #items {
+        justify-content: center;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #items div {
+        width:80px;
+        height:80px;
+        margin-top: -8px;
+    }
+    #result-images div {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #result-text {
+        font-size: 11px;
+    }
+    #scores {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #result-text {
+        font-size: 10px;
+    }
+    #scores {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #result-text {
+        font-size: 8px;
+    }
+    #scores {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    #items div {
+        width:60px;
+        height:60px;
+        border-radius: 10px;
+        background-size: 40px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    #items div{
+        width:200px;
+        height:150px;
+        margin-top:20px;
+    }
+    #result-images div {
+        width:400px;
+        height:150px;
+        margin-right: 10px;
+    }
+    #result-images {
+        justify-content: center;
+    }
+    #result-text {
+        justify-content: center;
+    }
+
+    #user-results {
+       margin-right: 20px;
+    }
+    #computer-results {
+        margin-right: 200px;
+    }
 }
